@@ -3,7 +3,7 @@
  Overview
 Audio-Sentinel-Detect is an advanced deepfake audio detection system designed to identify AI-generated speech in real-time or near real-time. Using cutting-edge machine learning techniques, this tool aims to preserve digital trust by detecting synthetic manipulations in speech data.
 
-🚀 Features
+#🚀 Features
 ✔️ Deep Learning-Based Detection: Utilizes CNNs, LSTMs, or Transformers for feature extraction and classification.
 ✔️ Real-Time or Batch Processing: Optimized for both live conversations and offline dataset analysis.
 ✔️ Pretrained Models Support: Compatible with ASVspoof, FakeAVCeleb, and other datasets.
@@ -11,10 +11,8 @@ Audio-Sentinel-Detect is an advanced deepfake audio detection system designed to
 ✔️ PyTorch & TensorFlow Support: Implements models using scalable deep learning frameworks.
 ✔️ Modular Codebase: Easy integration with various audio processing pipelines.
 
-📂 Project Structure
-bash
-Copy
-Edit
+#📂 Project Structure
+
 Audio-Sentinel-Detect/
 │── dataset/                 # Contains sample deepfake & real audio files  
 │── models/                  # Pretrained and trained models  
@@ -30,72 +28,57 @@ Audio-Sentinel-Detect/
 │── LICENSE                  # Open-source license  
 │── .gitignore               # Ignore unnecessary files  
 🔧 Installation
-1️⃣ Clone the repository:
+#1️⃣ Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/Audio-Sentinel-Detect.git
+git clone https://github.com/zubair-ahmad-beigh/Audio-Sentinel-Detect.git
 cd Audio-Sentinel-Detect
-2️⃣ Create a virtual environment & install dependencies:
 
-bash
-Copy
-Edit
+#2️⃣ Create a virtual environment & install dependencies:
+
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-🗂️ Dataset
+#🗂️ Dataset
+
 This project supports multiple deepfake audio datasets, including:
-
 ASVspoof 2021
-
 FakeAVCeleb
-
 WaveFake
 
 To use, download and place the dataset in the dataset/ folder.
 
-🧠 Model Training
+#🧠 Model Training
 Run the training script with default parameters:
 
-bash
-Copy
-Edit
 python src/train.py --epochs 20 --batch_size 32 --model "CNN_LSTM"
 This script will preprocess the data, train the model, and save the trained model in the models/ directory.
 
-🎯 Real-Time Detection
+
+#🎯 Real-Time Detection
 Detect deepfake audio in real-time using a microphone or pre-recorded file:
 python src/detect.py --input "sample_audio.wav"
 Output:
 
-json
-Copy
-Edit
 {
     "file": "sample_audio.wav",
     "prediction": "Deepfake",
     "confidence": 97.5
 }
-📊 Evaluation & Performance Metrics
+#📊 Evaluation & Performance Metrics
 To evaluate the model on a test dataset:
 
 bash
 Copy
 Edit
 python src/evaluate.py --dataset "ASVspoof"
-Metrics Tracked:
+#Metrics Tracked:
 ✔️ Accuracy
 ✔️ Precision, Recall & F1-Score
 ✔️ ROC-AUC
 
-🛠️ Dependencies
+#🛠️ Dependencies
 Create a requirements.txt file with:
 
-txt
-Copy
-Edit
 numpy
 librosa
 torch
@@ -104,16 +87,14 @@ matplotlib
 scikit-learn
 tqdm
 soundfile
-Install with:
 
-bash
-Copy
-Edit
+#Install with:
+
 pip install -r requirements.txt
-🔒 License
+#🔒 License
 This project is open-source under the MIT License. Feel free to contribute!
 
-📌 Contribution
+# 📌 Contribution
 We welcome contributions! Please follow these steps:
 
 Fork the repository.
